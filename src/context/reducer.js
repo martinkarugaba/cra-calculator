@@ -16,6 +16,12 @@ const reducer = (state, action) => {
         error: null,
       };
     case ACTIONS.FETCH_ERROR:
+      return {
+        ...state,
+        data: null,
+        loading: false,
+        error: true,
+      };
     default:
       return state;
   }
