@@ -27,7 +27,7 @@ const AppContext = ({ children }) => {
 
   const fetchData = async () => {
     try {
-      const url = 'https://api.api-ninjas.com/v1/quotes?category=happiness';
+      const url = 'https://api.api-ninjas.com/v1/quotes?category=humor';
       const apiKey = process.env.REACT_APP_QUOTES_API_KEY;
       const response = await fetch(url, {
         headers: {
