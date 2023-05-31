@@ -1,17 +1,20 @@
 import calculate from '../logic/calculate';
 
-const reducer = (state, action) => {
-  switch (action.type) {
-    case 'HANDLE_CLICK':
+//const reducer = (state, action) => {
+//  switch (action.type) {
+//    case 'HANDLE_CLICK':
 
-      return {
-        ...state,
-        result: calculate(state.result, action.payload),
-      };
+//      return {
+//        ...state,
+//        result: calculate(state.result, action.payload),
+//      };
 
-    default:
-      return state;
-  }
-};
+//    default:
+//      return state;
+//  }
+//};
 
 export default reducer;
+
+
+setResult(calculate(state.result, action.payload))

@@ -5,6 +5,7 @@ import reducer from './reducer';
 const defaultState = {
   result: { total: null, next: null, operation: null },
 };
+
 const GlobalContext = createContext();
 export const useGlobalContext = () => useContext(GlobalContext);
 
