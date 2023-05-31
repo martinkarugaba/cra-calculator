@@ -37,7 +37,7 @@ const AppContext = ({ children }) => {
       });
       const data = await response.json();
       console.log(data[0].quote);
-      dispatch({ type: ACTIONS.FETCH_SUCCESS, payload: data });
+      dispatch({ type: ACTIONS.FETCH_SUCCESS, payload: data[0] });
     } catch (error) {
       dispatch({ type: ACTIONS.FETCH_ERROR, payload: error.message });
     }
