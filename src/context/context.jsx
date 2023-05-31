@@ -22,7 +22,7 @@ const AppContext = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, defaultState);
 
   const handleClick = (buttonName) => {
-    dispatch({ type: 'HANDLE_CLICK', payload: buttonName });
+    dispatch({ type: ACTIONS.HANDLE_CLICK, payload: buttonName });
   };
 
   const fetchData = async () => {
