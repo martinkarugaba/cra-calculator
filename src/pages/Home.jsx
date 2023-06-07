@@ -1,5 +1,5 @@
 const Home = () => (
-  <div className="px-16 py-[5rem] h-[90vh]">
+  <div className="px-16 pt-[2rem] py-[5rem] h-[90vh]">
     <h1 className="text-4xl font-semibold">Welcome To Our Page!</h1>
     <p className="mb-8 mt-8 text-lg">
       Lorem ipsum, dolor sit amet consectetur adipisicing elit.

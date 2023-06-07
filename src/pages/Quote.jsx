@@ -5,8 +5,8 @@ const Quote = () => {
   const { quote } = data;
 
   return (
-    <div className="mt-8">
-      <p className="text-xl text-center italic w-[50ch]">{quote}</p>
+    <div className="pt-40 flex justify-center items-center">
+      <p className="text-xl text-center w-[50ch]">{quote}</p>
     </div>
   );
 };

@@ -7,13 +7,13 @@ const Navbar = () => (
     </div>
 
     <ul className="flex justify-center items-center gap-x-4">
-      <li className="border-r-2 cursor-pointer border-gray-950 pr-4">
+      <li className="border-r-2 border-gray-950 pr-4 text-blue-700 underline">
         <NavLink to="/">Home</NavLink>
       </li>
-      <li className="border-r-2 cursor-pointer border-gray-950 pr-4">
+      <li className="border-r-2 cursor-pointer border-gray-950 pr-4 text-blue-700 underline">
         <NavLink to="calculator">Calculator</NavLink>
       </li>
-      <li className="border-gray-950 cursor-pointer pr-4">
+      <li className="border-gray-950 cursor-pointer pr-4 text-blue-700 underline">
         <NavLink to="quote">Quote</NavLink>
       </li>
     </ul>
