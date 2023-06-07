@@ -6,7 +6,7 @@ const Quote = () => {
 
   return (
     <div className="pt-40 flex justify-center items-center">
-      <p className="text-xl text-center w-[50ch]">{quote}</p>
+      <p className="text-xl text-center text-slate-500 italics font-medium w-[50ch]">{quote}</p>
     </div>
   );
 };
