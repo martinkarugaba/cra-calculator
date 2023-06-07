@@ -3,7 +3,7 @@ import Digits from './Digits';
 import Display from './Display';
 import Operators from './Operators';
 
-const Calculator = () => {
+const CalculatorApp = () => {
   const { data } = useGlobalContext();
   const { quote } = data;
   return (
@@ -22,4 +22,4 @@ const Calculator = () => {
   );
 };
 
-export default Calculator;
+export default CalculatorApp;
