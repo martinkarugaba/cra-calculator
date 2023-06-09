@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CalculatorApp component matches the snapshot 1`] = `
+<div>
+  <div
+    class="w-[600px]"
+  >
+    <div
+      data-testid="display"
+    />
+    <div
+      class="flex justify-between items-start"
+    >
+      <div
+        data-testid="digits"
+      />
+      <div
+        data-testid="operators"
+      />
+    </div>
+  </div>
+</div>
+`;
