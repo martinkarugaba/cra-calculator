@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Display from './Display';
-import { useGlobalContext } from '../context/context';
+import Display from '../Display';
+import { useGlobalContext } from '../../context/context';
 
-jest.mock('../context/context', () => ({
+jest.mock('../../context/context', () => ({
   useGlobalContext: jest.fn(),
 }));
 

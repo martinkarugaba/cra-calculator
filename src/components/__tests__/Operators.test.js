@@ -1,14 +1,14 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Operators from './Operators';
+import Operators from '../Operators';
 
-jest.mock('../data/operators', () => [
+jest.mock('../../data/operators', () => [
   { id: 1, text: 'Operator 1' },
   { id: 2, text: 'Operator 2' },
   { id: 3, text: 'Operator 3' },
 ]);
 
-jest.mock('./SingleButton', () => {
+jest.mock('../SingleButton', () => {
   return function MockSingleButton(props) {
     return (
       <div data-testid="single-button">
