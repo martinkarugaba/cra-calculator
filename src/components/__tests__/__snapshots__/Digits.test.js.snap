@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SingleButton component renders correctly 1`] = `
+<button
+  class="basis-class flex justify-center items-center bg-class hover:bg-slate-400 text-black h-[60px] border-r border-t text-xs cursor-pointer"
+  type="button"
+>
+  Test Button
+</button>
+`;

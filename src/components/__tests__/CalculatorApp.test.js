@@ -1,9 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import CalculatorApp from '../CalculatorApp';
-import Display from '../Display';
-import Digits from '../Digits';
-import Operators from '../Operators';
 
 jest.mock('../Display', () => () => <div data-testid="display" />);
 jest.mock('../Digits', () => () => <div data-testid="digits" />);
