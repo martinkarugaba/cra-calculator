@@ -18,7 +18,7 @@ describe('SingleButton component', () => {
           basis={props.basis}
           bg={props.bg}
         />
-      </AppContext>
+      </AppContext>,
     );
 
     expect(container.firstChild).toMatchSnapshot();

@@ -5,7 +5,17 @@ import Operators from '../Operators';
 function MockSingleButton({ buttonName, basis, bg }) {
   return (
     <div data-testid="single-button">
-      {buttonName} - {basis} - {bg}
+      `
+      {buttonName}
+      {' '}
+      -
+      {' '}
+      {basis}
+      {' '}
+      -
+      {' '}
+      {bg}
+      `
     </div>
   );
 }
