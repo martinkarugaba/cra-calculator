@@ -2,9 +2,23 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import CalculatorApp from '../CalculatorApp';
 
-jest.mock('../Display', () => () => <div data-testid="display" />);
-jest.mock('../Digits', () => () => <div data-testid="digits" />);
-jest.mock('../Operators', () => () => <div data-testid="operators" />);
+jest.mock('../Display', () => {
+  const Display = () => <div data-testid="display" />;
+  Display.displayName = 'Display';
+  return Display;
+});
+
+jest.mock('../Digits', () => {
+  const Digits = () => <div data-testid="digits" />;
+  Digits.displayName = 'Digits';
+  return Digits;
+});
+
+jest.mock('../Operators', () => {
+  const Operators = () => <div data-testid="operators" />;
+  Operators.displayName = 'Operators';
+  return Operators;
+});
 
 describe('CalculatorApp component', () => {
   it('matches the snapshot', () => {

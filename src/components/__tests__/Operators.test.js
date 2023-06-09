@@ -1,6 +1,16 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import { render } from '@testing-library/react';
 import Operators from '../Operators';
+
+function MockSingleButton({ buttonName, basis, bg }) {
+  return (
+    <div data-testid="single-button">
+      {buttonName} - {basis} - {bg}
+    </div>
+  );
+}
+
+jest.mock('../SingleButton', () => MockSingleButton);
 
 jest.mock('../../data/operators', () => [
   { id: 1, text: 'Operator 1' },
@@ -8,15 +18,11 @@ jest.mock('../../data/operators', () => [
   { id: 3, text: 'Operator 3' },
 ]);
 
-jest.mock('../SingleButton', () => {
-  return function MockSingleButton(props) {
-    return (
-      <div data-testid="single-button">
-        {props.buttonName} - {props.basis} - {props.bg}
-      </div>
-    );
-  };
-});
+MockSingleButton.propTypes = {
+  buttonName: PropTypes.string.isRequired,
+  basis: PropTypes.string.isRequired,
+  bg: PropTypes.string.isRequired,
+};
 
 describe('Operators component', () => {
   it('matches the snapshot', () => {
@@ -33,8 +39,14 @@ describe('Operators component', () => {
   it('passes the correct props to SingleButton components', () => {
     const { getAllByTestId } = render(<Operators />);
     const singleButtons = getAllByTestId('single-button');
-    expect(singleButtons[0]).toHaveTextContent('Operator 1 - basis-1/3 - bg-orange-400');
-    expect(singleButtons[1]).toHaveTextContent('Operator 2 - basis-1/3 - bg-orange-400');
-    expect(singleButtons[2]).toHaveTextContent('Operator 3 - basis-1/3 - bg-orange-400');
+    expect(singleButtons[0]).toHaveTextContent(
+      'Operator 1 - basis-1/3 - bg-orange-400',
+    );
+    expect(singleButtons[1]).toHaveTextContent(
+      'Operator 2 - basis-1/3 - bg-orange-400',
+    );
+    expect(singleButtons[2]).toHaveTextContent(
+      'Operator 3 - basis-1/3 - bg-orange-400',
+    );
   });
 });

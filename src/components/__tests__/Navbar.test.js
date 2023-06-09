@@ -8,7 +8,7 @@ describe('Navbar component', () => {
     const { container } = render(
       <MemoryRouter>
         <Navbar />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
     expect(container).toMatchSnapshot();
   });
@@ -17,7 +17,7 @@ describe('Navbar component', () => {
     const { getByText } = render(
       <MemoryRouter>
         <Navbar />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     const homeLink = getByText('Home');
