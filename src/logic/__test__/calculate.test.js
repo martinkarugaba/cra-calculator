@@ -10,6 +10,7 @@ describe('calculate', () => {
     const result = calculate(initialState, 'AC');
     expect(result).toEqual(initialState);
   });
+
   it('should update "next" when there is already an operation', () => {
     const initialState = {
       total: '10',
@@ -23,6 +24,7 @@ describe('calculate', () => {
       operation: '+',
     });
   });
+
   it('should clear "next" and set "total" when given an operation', () => {
     const initialState = {
       total: '10',
@@ -36,6 +38,7 @@ describe('calculate', () => {
       operation: '-',
     });
   });
+
   it('should return the result of the operation when given "="', () => {
     const initialState = {
       total: '10',
@@ -49,6 +52,7 @@ describe('calculate', () => {
       operation: null,
     });
   });
+
   it('should handle the "+/-" button', () => {
     const initialState = {
       total: null,

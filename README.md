@@ -84,7 +84,9 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://cra-calculator.netlify.app/)
+- [Live Demo Link(netlify)](https://cra-calculator.netlify.app/)
+  
+- [Live Demo Link(render)](https://cra-calculator.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
