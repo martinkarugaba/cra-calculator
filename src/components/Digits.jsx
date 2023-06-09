@@ -1,7 +1,7 @@
 import middleDigits, { firstRow, lastRow } from '../data/digits';
 import SingleButton from './SingleButton';
 
-const Buttons = () => (
+const Digits = () => (
   <div className="flex justify-start items-start flex-wrap w-[75%] h-auto">
     <div className="flex justify-start items-center w-[100%]">
       {firstRow.map((item) => (
@@ -37,4 +37,4 @@ const Buttons = () => (
   </div>
 );
 
-export default Buttons;
+export default Digits;
