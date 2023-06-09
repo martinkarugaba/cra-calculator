@@ -52,7 +52,7 @@ describe('calculate', () => {
       operation: null,
     });
   });
-  
+
   it('should handle the "+/-" button', () => {
     const initialState = {
       total: null,
